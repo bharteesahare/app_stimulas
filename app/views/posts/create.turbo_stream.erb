@@ -1,0 +1,11 @@
+<%= turbo_stream.append 'flash-messages' do %>
+  <div class="alert alert-success">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<%= turbo_stream.append 'flash-messages' do %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
